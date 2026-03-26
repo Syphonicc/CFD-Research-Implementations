@@ -137,19 +137,3 @@ This reproduction was the starting point for a formal comparison study requested
 
 ---
 
-## Repository Structure
-
-```
-CFD-Research-Implementations/
-└── fukagata-fukami-2025-cnnae/
-    ├── README.md
-    ├── cnnae_reproduction.ipynb     # Main training notebook (Kaggle)
-    ├── pod_comparison.ipynb         # POD implementation and comparison
-    ├── data/                        # Cylinder wake DNS snapshots
-    ├── results/
-    │   ├── reconstruction_comparison.png
-    │   ├── pic1.png                 # POD mode visualization
-    │   ├── pic2.png                 # Scaling study plot
-        └── data.txt                 # Numerical error table
-    
-```
