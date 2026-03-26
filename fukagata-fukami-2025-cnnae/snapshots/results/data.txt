@@ -1,0 +1,6 @@
+--- Scaling Study Summary ---
+Dim 1: POD=0.7319, CNN-AE=0.2148 (3.4x better)
+Dim 2: POD=0.2300, CNN-AE=0.0490 (4.7x better)
+Dim 4: POD=0.1291, CNN-AE=0.0554 (2.3x better)
+Dim 8: POD=0.0167, CNN-AE=0.0426 (0.4x better)
+Dim 16: POD=0.0012, CNN-AE=0.0409 (0.0x better)
