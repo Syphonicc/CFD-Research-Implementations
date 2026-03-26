@@ -127,11 +127,10 @@ This reproduction was the starting point for a formal comparison study requested
 
 ```bibtex
 @article{fukagata2025compressing,
-  title={Compressing fluid flows with nonlinear machine learning: 
-         mode decomposition, latent modeling, and flow control},
-  author={Fukagata, Koji and Fukami, Kai},
-  journal={arXiv preprint arXiv:2505.00343},
-  year={2025}
+  title   = {Compressing fluid flows with nonlinear machine learning: mode decomposition, latent modeling, and flow control},
+  author  = {Fukagata, Koji and Fukami, Kai},
+  journal = {arXiv preprint arXiv:2505.00343},
+  year    = {2025}
 }
 ```
 
