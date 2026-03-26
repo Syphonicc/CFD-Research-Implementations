@@ -50,15 +50,15 @@ The crossover point near n_ξ = 4–8 reflects the practical regime where nonlin
 
 ### CNN-AE Flow Field Reconstruction
 
-![CNN-AE Reconstruction](results/reconstruction_comparison.png)
+![CNN-AE Reconstruction](snapshots/results/reconstruction_comparison.png)
 *Left: DNS (ground truth) cylinder wake at Re_D = 100. Right: CNN-AE reconstruction...*
 
 ### POD Mode Decomposition (k=2)
-![POD Modes](results/pic1.png)
+![POD Modes](snapshots/results/pic1.png)
 *Original fluctuation field alongside 2-mode POD reconstruction...*
 
 ### Nonlinear vs Linear Compression Efficiency
-![Scaling Study](results/pic2.png)
+![Scaling Study](snapshots/results/pic2.png)
 *L2 reconstruction error vs latent dimension on log scale...*
 
 ---
