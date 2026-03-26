@@ -49,16 +49,17 @@ The crossover point near n_ξ = 4–8 reflects the practical regime where nonlin
 ## Visualizations
 
 ### CNN-AE Flow Field Reconstruction
-![CNN-AE Reconstruction](fukagata-fukami-2025-cnnae/snapshots/results/reconstruction_comparison.png)
-*Left: DNS (ground truth) cylinder wake at Re_D = 100. Right: CNN-AE reconstruction with L2 error = 0.0384 at n_ξ = 2. The large-scale vortex shedding structure is captured accurately.*
+
+![CNN-AE Reconstruction](results/reconstruction_comparison.png)
+*Left: DNS (ground truth) cylinder wake at Re_D = 100. Right: CNN-AE reconstruction...*
 
 ### POD Mode Decomposition (k=2)
-![POD Modes](pic1.png)
-*Original fluctuation field alongside 2-mode POD reconstruction. POD captures dominant structures but smooths fine-scale details.*
+![POD Modes](results/pic1.png)
+*Original fluctuation field alongside 2-mode POD reconstruction...*
 
 ### Nonlinear vs Linear Compression Efficiency
-![Scaling Study](pic2.png)
-*L2 reconstruction error vs latent dimension on log scale. CNN-AE (cyan) dominates at low n_ξ; POD (dashed) overtakes at high n_ξ due to optimal linear convergence.*
+![Scaling Study](results/pic2.png)
+*L2 reconstruction error vs latent dimension on log scale...*
 
 ---
 
