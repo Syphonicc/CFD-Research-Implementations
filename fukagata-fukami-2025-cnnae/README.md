@@ -49,7 +49,7 @@ The crossover point near n_ξ = 4–8 reflects the practical regime where nonlin
 ## Visualizations
 
 ### CNN-AE Flow Field Reconstruction
-![CNN-AE Reconstruction](reconstruction_comparison.png)
+![CNN-AE Reconstruction](fukagata-fukami-2025-cnnae/snapshots/results/reconstruction_comparison.png)
 *Left: DNS (ground truth) cylinder wake at Re_D = 100. Right: CNN-AE reconstruction with L2 error = 0.0384 at n_ξ = 2. The large-scale vortex shedding structure is captured accurately.*
 
 ### POD Mode Decomposition (k=2)
