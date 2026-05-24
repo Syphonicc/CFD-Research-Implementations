@@ -78,12 +78,12 @@ CNN-AE substantially outperforms POD at low latent dimensions (n_ξ ≤ 4). The 
 
 **3-panel reconstruction comparison (n_ξ=2):**
 
-![DNS vs POD vs CNN-AE Re=100](snapshots/re100/comparison_re100.png)
+![DNS vs POD vs CNN-AE Re=100](snapshots/results/POD_CNNAE_ORG.png)
 *Left: Original DNS field. Centre: POD reconstruction (L2=0.2302). Right: CNN-AE reconstruction (L2=0.0379). CNN-AE recovers the nonlinear vortex shedding structure that POD smears.*
 
 **Latent dimension scaling study:**
 
-![Scaling Study](snapshots/re100/scaling_study.png)
+![Scaling Study](reconstruction_comparison.png)
 *L2 reconstruction error vs latent dimension on log scale. CNN-AE advantage is largest at n_ξ=1,2 and disappears above n_ξ=8.*
 
 **POD mode decomposition:**
@@ -158,8 +158,10 @@ Orthogonality of latent variables is measured via det(R)×100 where R is the cor
 
 **3-panel comparison (Uy, n_ξ=2):**
 
-![Comparison Re=300](snapshots/re300/comparison_re300_Uy.png)
+![Comparison Re=300](snapshots/results/Uy_channel_300.png)
 *CNN-AE clearly outperforms POD. The alternating vortex blobs are sharper and better positioned in the CNN-AE reconstruction.*
+
+![Comparison Re=300](snapshots/results/ux_channel_300.png)
 
 | Method | Global L2 |
 |:---:|:---:|
@@ -174,11 +176,11 @@ Orthogonality of latent variables is measured via det(R)×100 where R is the cor
 
 **3-panel comparison (Ux, n_ξ=2, snapshot=30):**
 
-![Comparison Re=1000 Ux](snapshots/re1000/comparison_re1000_Ux.png)
+![Comparison Re=1000 Ux](snapshots/results/Ux_reconstruction_1000.png)
 
 **3-panel comparison (Uy, n_ξ=2, snapshot=30):**
 
-![Comparison Re=1000 Uy](snapshots/re1000/comparison_re1000_Uy.png)
+![Comparison Re=1000 Uy](snapshots/results/Uy_reconstruction_1000.png)
 
 **Per-snapshot L2 -> Uy channel:**
 
@@ -205,11 +207,19 @@ Orthogonality of latent variables is measured via det(R)×100 where R is the cor
 
 **3-panel comparison -> Standard CNN-AE (Uy, n_ξ=2, snapshot=10):**
 
-![Comparison Re=10k CNN-AE](snapshots/re10k/comparison_re10k_Uy_cnnae.png)
+![Comparison Re=10k CNN-AE](snapshots/results/Uy_reconstruction_10k.png)
+
+**3-panel comparison -> Standard CNN-AE (Ux, n_ξ=2):**
+![Comparison Re=10k CNN-AE](snapshots/results/Ux_reconstruction_10k.png)
+
 
 **3-panel comparison -> β-VAE (Uy, n_ξ=2, snapshot=50):**
 
-![Comparison Re=10k β-VAE](snapshots/re10k/comparison_re10k_Uy_bvae.png)
+![Comparison Re=10k β-VAE](snapshots/results/Uy_reconstruction_B-VAE_10k.png)
+
+**3-panel comparison -> β-VAE (Ux, n_ξ=2):**
+
+![Comparison Re=10k β-VAE](snapshots/results/Ux_reconstruction_B-VAE_10k.png)
 
 **Three-way comparison -> Uy channel:**
 
@@ -248,7 +258,7 @@ The β-VAE result reproduces the reconstruction-orthogonality tradeoff from Figu
 | 100 | Laminar (paper) | CNN-AE 4.7× better at n_ξ=2 | Near-periodic flow compresses cleanly into 2 nonlinear modes |
 | 300 | Laminar | CNN-AE clearly better | Same as Re=100, result holds on independently generated data |
 | 1000 | Transitional | CNN-AE wins on Uy (9/12 snaps) | Nonlinear manifold captures shedding well, limited by snapshot count |
-| 10000 | Turbulent | Essentially even (5-6/11 snaps) | n_ξ=2 insufficient — HAE or higher n_ξ needed |
+| 10000 | Turbulent | Essentially even (5-6/11 snaps) | n_ξ=2 insufficient <-> HAE or higher n_ξ needed |
 
 The results across all Reynolds numbers are consistent with the paper's central argument: **nonlinear CNN-AE compression outperforms linear POD in the highly compressed regime for flows with nonlinear manifold structure, but the advantage diminishes as flow complexity increases beyond what a 2-dimensional latent space can represent.**
 
