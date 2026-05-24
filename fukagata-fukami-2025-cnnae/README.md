@@ -83,12 +83,12 @@ CNN-AE substantially outperforms POD at low latent dimensions (n_ξ ≤ 4). The 
 
 **Latent dimension scaling study:**
 
-![Scaling Study](reconstruction_comparison.png)
+![Scaling Study](snapshots/results/pic1.png)
 *L2 reconstruction error vs latent dimension on log scale. CNN-AE advantage is largest at n_ξ=1,2 and disappears above n_ξ=8.*
 
 **POD mode decomposition:**
 
-![POD Modes](snapshots/re100/pod_modes.png)
+![POD Modes](snapshots/results/pic2.png)
 *2-mode POD reconstruction alongside individual spatial modes.*
 
 ---
