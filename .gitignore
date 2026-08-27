@@ -1,0 +1,19 @@
+# generated data - everything here regenerates from scripts with fixed seeds
+*.npz
+*.npy
+*.h5
+*.pt
+*.pth
+
+# python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+*.egg-info/
+
+# os / editor
+.DS_Store
+.vscode/
+.idea/
