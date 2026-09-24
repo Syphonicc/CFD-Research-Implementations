@@ -7,13 +7,6 @@ the published value, and documents the choices the paper left unspecified.
 Failed and partial reproductions are kept, not deleted. The gap between a paper
 and a working implementation is usually the interesting part.
 
-## Reproductions
-
-| # | Paper | Target metric | Published | Reproduced | Status |
-|---|-------|---------------|-----------|------------|--------|
-| 1 | Fukagata & Fukami — CNN-AE | *(fill in)* | *(fill in)* | *(fill in)* | — |
-| 2 | [Pathak et al., PRL **120**, 024102 (2018)](pathak-ott-2018-reservoir/) — reservoir computing on Kuramoto–Sivashinsky | valid prediction time, Fig. 2 config | no published number | 2.6 ± 0.4 Lyapunov times | method reproduced; Fig. 4 (the ~8 Lyap result) not attempted |
-
 ## Conventions
 
 Each reproduction folder follows the same layout:
